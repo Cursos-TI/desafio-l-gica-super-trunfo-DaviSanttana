@@ -128,61 +128,52 @@ int main()
     scanf("%d", &opcao2);
 
     // Atributo 1
-    if (opcao1 == 1)
-    {
+   switch (opcao1) {
+    case 1:
         valor1_a = populacao1;
         valor2_a = populacao2;
-    }
-    else if (opcao1 == 2)
-    {
+        break;
+    case 2:
         valor1_a = area1;
         valor2_a = area2;
-    }
-    else if (opcao1 == 3)
-    {
+        break;
+    case 3:
         valor1_a = pib1;
         valor2_a = pib2;
-    }
-    else if (opcao1 == 4)
-    {
+        break;
+    case 4:
         valor1_a = pontosTuristicos1;
         valor2_a = pontosTuristicos2;
-    }
-    else
-    {
-        // Se nenhuma das anteriores, só pode ser a opção 5
+        break;
+    case 5:
         valor1_a = densidemo1;
         valor2_a = densidemo2;
-    }
+        break;
+}
 
     // Atributo 2
-    if (opcao2 == 1)
-    {
+   switch (opcao2) {
+    case 1:
         valor1_b = populacao1;
         valor2_b = populacao2;
-    }
-    else if (opcao2 == 2)
-    {
+        break;
+    case 2:
         valor1_b = area1;
         valor2_b = area2;
-    }
-    else if (opcao2 == 3)
-    {
+        break;
+    case 3:
         valor1_b = pib1;
         valor2_b = pib2;
-    }
-    else if (opcao2 == 4)
-    {
+        break;
+    case 4:
         valor1_b = pontosTuristicos1;
         valor2_b = pontosTuristicos2;
-    }
-    else
-    {
-        // Se nenhuma das anteriores, só pode ser a opção 5
+        break;
+    case 5:
         valor1_b = densidemo1;
         valor2_b = densidemo2;
-    }
-
+        break;
+}
     // Exibir comparação
     printf("\nComparando as cartas %s e %s:\n", nomeCidade1, nomeCidade2);
 
